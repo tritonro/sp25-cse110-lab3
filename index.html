@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2: Meeting Minutes & HTML form</title>
+    <meta charset = "utf-8">
+    <link rel="icon" href="images/image.png"/>
+  </head>
+
+  <body>
+    <header>
+        <div> 
+            <h1>Introductory Meeting</h1>
+            <h2> Icebreakers, initial asssignment planning</h2>
+            <h3>April 9, 2025</h3>
+        </div>
+    </header>
+   <nav>
+    <button>stay on homepage
+    </button>
+   </nav>
+   <section>
+    <h2>Agenda</h2>
+    <ol> 
+        <li>Introduce ourselves </li>
+        <li>Plan <a href="https://ranking.sanrio.co.jp/en/">2025 Character Ranking</a> campaign</li>
+        <li>Plan team bonding event </li>
+        <li>Record a team video </li>
+        <li>Propose additional agenda items</li>
+        <li>Plan next meeting</li>
+        <li>Conclude</li>
+    </ol>
+    <hr>
+</section>
+
+    <h2>New Business</h2>
+    <p>Team Branding</p>
+     
+    <h2>Attendance</h2>
+    <ul>
+        <li>Tuxedo Sam</li>
+        <li>Usahana</li>
+        <li>Keroppi</li>
+    </ul>
+ 
+<span>
+    <h2>Unfinished business</h2>
+    <p><b>N/A</b>, this is our <strong>first meeting</strong>.</p>
+</span>
+
+
+  <h2>Images</h2>
+<img src="images/2025_char_campaign.png" height=300> 
+
+<h2>Audio</h2>
+
+
+<h2>Video</h2>
+<video src="" controls></video>
+<audio src="" controls></audio>
+
+<h3>irrelevant blurb</h3>
+<p>Lorem ipsum dolor sit amet <em>consectetur <em>dipiscing</em>a elit</em>. Quisque faucibus ex sapien vitae pellentesque sem placerat. <br>In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+
+  <h2>Questions & Comments</h2>
+  <ul>
+    <li>Why is a group of <i>Sanrio characters</i> on a team in CSE 110?</li>
+    <li>Our team video should have been a 60 second TikTok</li>
+    <li><b>A quick brown fox jumped over the lazy dog.</b></li>
+    <li><strong>A quick brown fox jumped over the lazy dog.</strong></li>
+    <li>Strong tag is used to denote semantic importance. Bold does not have this effect, and should only be used if strong is not applicable to the situation.</li>
+    <li>Em and i tags both yield italicized text, but em denotes importance, whereas i does not. Someone on StackOverflow said i is commonly used for icons now ?</li>
+</ul>
+
+<footer>
+    <summary>Our Functionless Form</summary>
+    <details>
+        <form>
+            <fieldset>
+               <input type="radio" id="Keroppi"/>
+               <label for="Keroppi">Keroppi</label>
+        
+            <p>Pick a character</p>
+            <input list="characters"></input>
+                <datalist id="characters">
+                    <option value="Keroppi"></option>
+                    <option value="Usahana"></option>
+                </datalist>
+<!--these inputs are not done-->
+            <input "checkbox"></input>
+            <input "radio"></input>
+            <input "date"></input>
+            <input "text"></input>
+
+                <label for="select">Select a character</label>
+                <select id="select">
+                    <option value="Keroppi">Keroppi</option>
+                    <option value="Usahana">Usahana</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="reason">Why did you pick this character?</label>
+                <textarea id="reason"></textarea>
+            </fieldset>
+
+            <button>poke Keroppi</button>
+        </form>
+    </details>
+</footer>
+</body>
+
+</html>
