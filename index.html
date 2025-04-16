@@ -41,24 +41,24 @@
         <li>Keroppi</li>
     </ul>
  
-<span>
-    <h2>Unfinished business</h2>
-    <p><b>N/A</b>, this is our <strong>first meeting</strong>.</p>
-</span>
+
 
 
   <h2>Images</h2>
-<img src="images/2025_char_campaign.png" height=300em> 
+<img src="images/2025_char_campaign.png" style="width: 100%" alt="Official promotional poster for 2025 Sanrio Character Ranking Competition"> 
 
 
 <h2>Video</h2>
-<video src="images/ScreenRecording_04-15-2025 17-46-40_1.MP4" height = 300em controls></video>
+<span>
+    <video src="images/piano.MP4" height = 300 controls></video>
+</span>
+
 
 <h2>Audio</h2>
-<audio src="images/audio.m4a" height = 300em controls></audio>
+<audio src="images/audio.m4a" controls></audio>
 
   <details> 
-    <h2>Questions & Comments</h2>
+    <summary>Questions</summary>
     <ul>
         <li>Why is a group of <i>Sanrio characters</i> on a team in CSE 110?</li>
         <li>Our team video should have been a 60 second TikTok</li>
@@ -68,7 +68,7 @@
 
 
 <footer>
-    <summary>Our Functionless Form</summary>
+    <p>Form</p>
 
     
         <form>
@@ -76,11 +76,12 @@
                 <p> Choose Keroppi</p>
                <input type="radio" id="Keroppi"/>
                <label for="Keroppi">Keroppi</label>
-               <input type="checkbox">Keroppi</input>
-               <input "text"></input>
+               <label for="checkbox">Keroppi</label>
+               <input type="checkbox" id="checkbox"/>
+               <input type="text"/>
         
             <p>Pick a character</p>
-            <input list="characters"></input>
+            <input list="characters"/>
                 <datalist id="characters">
                     <option value="Keroppi"></option>
                     <option value="Usahana"></option>
@@ -91,12 +92,12 @@
 <!--these inputs are not done-->
 
             
-            <label for="birthday">When is your favorite character's birthday ?</p>
-            <input id="birthday" type="date"></input>
+            <label for="birthday">When is your favorite character's birthday ?</label> 
+            <input id="birthday" type="date"/>
             <br>
 
-`               <label for="select">Select a character</label>
-                <select id="select">
+`           <p>Select a character</p>
+                <select">
                     <option value="Keroppi">Keroppi</option>
                     <option value="Usahana">Usahana</option>
                     <option value="Tuxedo Sam">Tuxedo Sam</option>
