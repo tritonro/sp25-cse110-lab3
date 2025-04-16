@@ -15,8 +15,7 @@
         </div>
     </header>
    <nav>
-    <button>stay on homepage
-    </button>
+    Nav: There's only one page
    </nav>
    <section>
     <h2>Agenda</h2>
@@ -49,52 +48,58 @@
 
 
   <h2>Images</h2>
-<img src="images/2025_char_campaign.png" height=300> 
-
-<h2>Audio</h2>
+<img src="images/2025_char_campaign.png" height=300em> 
 
 
 <h2>Video</h2>
-<video src="" controls></video>
-<audio src="" controls></audio>
+<video src="images/ScreenRecording_04-15-2025 17-46-40_1.MP4" height = 300em controls></video>
 
-<h3>irrelevant blurb</h3>
-<p>Lorem ipsum dolor sit amet <em>consectetur <em>dipiscing</em>a elit</em>. Quisque faucibus ex sapien vitae pellentesque sem placerat. <br>In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+<h2>Audio</h2>
+<audio src="images/audio.m4a" height = 300em controls></audio>
 
-  <h2>Questions & Comments</h2>
-  <ul>
-    <li>Why is a group of <i>Sanrio characters</i> on a team in CSE 110?</li>
-    <li>Our team video should have been a 60 second TikTok</li>
-    <li><b>A quick brown fox jumped over the lazy dog.</b></li>
-    <li><strong>A quick brown fox jumped over the lazy dog.</strong></li>
-    <li>Strong tag is used to denote semantic importance. Bold does not have this effect, and should only be used if strong is not applicable to the situation.</li>
-    <li>Em and i tags both yield italicized text, but em denotes importance, whereas i does not. Someone on StackOverflow said i is commonly used for icons now ?</li>
-</ul>
+  <details> 
+    <h2>Questions & Comments</h2>
+    <ul>
+        <li>Why is a group of <i>Sanrio characters</i> on a team in CSE 110?</li>
+        <li>Our team video should have been a 60 second TikTok</li>
+    </ul>
+
+  </details>
+
 
 <footer>
     <summary>Our Functionless Form</summary>
-    <details>
+
+    
         <form>
             <fieldset>
+                <p> Choose Keroppi</p>
                <input type="radio" id="Keroppi"/>
                <label for="Keroppi">Keroppi</label>
+               <input type="checkbox">Keroppi</input>
+               <input "text"></input>
         
             <p>Pick a character</p>
             <input list="characters"></input>
                 <datalist id="characters">
                     <option value="Keroppi"></option>
                     <option value="Usahana"></option>
+                    <option value="Tuxedo Sam"></option>
                 </datalist>
-<!--these inputs are not done-->
-            <input "checkbox"></input>
-            <input "radio"></input>
-            <input "date"></input>
-            <input "text"></input>
 
-                <label for="select">Select a character</label>
+        <br>
+<!--these inputs are not done-->
+
+            
+            <label for="birthday">When is your favorite character's birthday ?</p>
+            <input id="birthday" type="date"></input>
+            <br>
+
+`               <label for="select">Select a character</label>
                 <select id="select">
                     <option value="Keroppi">Keroppi</option>
                     <option value="Usahana">Usahana</option>
+                    <option value="Tuxedo Sam">Tuxedo Sam</option>
                 </select>
             </fieldset>
 
@@ -103,9 +108,9 @@
                 <textarea id="reason"></textarea>
             </fieldset>
 
-            <button>poke Keroppi</button>
+            <button>back to top</button>
         </form>
-    </details>
+
 </footer>
 </body>
 
