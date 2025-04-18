@@ -1,0 +1,31 @@
+:root{
+    --main-bg-color:#f5f3f2
+    
+}
+
+body{
+    
+    background-color: var(--main-bg-color, lightgrey); 
+    --section-bg-color: rgb(150, 213, 247);
+
+}
+
+header{
+    --accent-bg-color: hsl(228, 51%, 40%);
+    background-color: var(--accent-bg-color, darkblue);
+}
+
+nav {
+    
+    background-color: color-mix(in oklab, var (--main-bg-color) 50%, var (--section-bg-color));
+}
+
+section{
+    
+    background-color: var(--section-bg-color, aliceblue)
+
+}
+
+hr{
+    border: 10px solid var(--section-bg-color, aliceblue)
+}
