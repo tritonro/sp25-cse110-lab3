@@ -198,3 +198,9 @@ button:active{
     50%{transform: rotate(180deg)}
     100%{transform:rotate(360deg)}
 }
+
+@media(max-width: 768px){
+    body{
+        background-color: var(--section-bg-color);
+    }
+}
