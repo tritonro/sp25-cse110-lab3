@@ -44,6 +44,7 @@ header{
 #subtitle{
     color: var(--header-text-color); 
     position: absolute; 
+    top: 200px; 
 }
 
 h1{
@@ -51,17 +52,19 @@ h1{
     font-size: 10vmin; 
     color: var(--header-text-color);
 }
+header h2{
+    font-family: 'DynaPuff';
+}
 
 h2{
+    font-family: sans-serif;
     text-align: center;
     color: var(--section-header-text-color); 
     position: relative; 
     top: 0px; 
 }
 
-header h2{
-    font-family: 'DynaPuff';
-}
+
 
 h3{
     color: var(--header-text-color);
