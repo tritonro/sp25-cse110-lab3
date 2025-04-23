@@ -11,6 +11,7 @@ body{
     --section-header-text-color: hsl(228, 51%, 40%);
     --footer-text-color: hsl(228, 51%, 40%); 
     margin: 1%; 
+    display: block; 
 
 }
 
@@ -55,7 +56,8 @@ h2{
 h3{color: var(--header-text-color)}
 nav {
     padding: 2%; 
-    
+
+    display: none; 
     background-color: color-mix(in oklab, var (--main-bg-color) 50%, var (--section-bg-color));
 }
 
@@ -64,6 +66,7 @@ section{
     --section-accent-color: #f39bc4; 
     border: 2px dashed var(--section-accent-color);
     margin-bottom: 1em;
+    margin-top: 1em; 
 
      
 
