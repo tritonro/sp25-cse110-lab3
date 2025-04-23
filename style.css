@@ -6,7 +6,7 @@
 body{
     
     background-color: var(--main-bg-color, lightgrey);
-    
+    --accent-color: #f39bc4; 
     --section-bg-color: rgb(150, 213, 247);
     --section-header-text-color: hsl(228, 51%, 40%);
     --footer-text-color: hsl(228, 51%, 40%); 
@@ -65,8 +65,8 @@ nav {
 
 section{
     background-color: var(--section-bg-color, aliceblue);
-    --section-accent-color: #f39bc4; 
-    border: 2px dashed var(--section-accent-color);
+    
+    border: 2px dashed var(--accent-color);
     margin-bottom: 1em;
     margin-top: 1em; 
 
@@ -95,6 +95,7 @@ video {
     height:500px;
 }
 
+
 img{
     width: 50%; 
     position: relative; 
@@ -111,8 +112,28 @@ footer{
 form{
     color: var(--footer-text-color)
 }
+button{
+    position: relative; 
+    left: 45%; 
+    margin: 1em; 
+}
+button:active{
+    background-color: var(--accent-color);
+}
 
 #new-biz-heading{
-    height: 2em; 
+    height: 2em;
     
+}
+
+#new-biz-heading:hover {
+    animation-name: full-spin; 
+    animation-duration: 2s; 
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes full-spin {
+    0%{}
+    50%{transform: rotate(180deg)}
+    100%{transform:rotate(360deg)}
 }
