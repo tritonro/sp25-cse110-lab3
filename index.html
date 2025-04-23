@@ -29,31 +29,34 @@
     </ol>
     <hr>
 </section>
+<div>
+    <section id="new-biz" >
+        <h2 id="new-biz-heading" >New Business</h2>
+        <p class="short-p">Team Branding</p>
+    </section>
+        
+    <section>
+        <h2>Attendance</h2>
+        <ul>
+            <li>Tuxedo Sam</li>
+            <li>Usahana</li>
+            <li>Keroppi</li>
+        </ul>
+    </section>      
+</div>
 
-<section id="new-biz" >
-    <h2 id="new-biz-heading" >New Business</h2>
-    <p class="short-p">Team Branding</p>
-</section>
-    
-<section>
-    <h2>Attendance</h2>
-    <ul>
-        <li>Tuxedo Sam</li>
-        <li>Usahana</li>
-        <li>Keroppi</li>
-    </ul>
-</section>  
-    
  
 
 
 <section class="media">
     <h2> Media </h2>
-    <img src="images/2025_char_campaign.png"  alt="Official promotional poster for 2025 Sanrio Character Ranking Competition"> 
-     <hr> 
-    <span>
-        <video src="images/piano.MP4" controls></video>
-    </span>
+    <picture>
+        <img src="images/2025_char_campaign.png"  alt="Official promotional poster for 2025 Sanrio Character Ranking Competition"> 
+       <span>
+           <video src="images/piano.MP4" controls></video>
+       </span>
+    </picture>
+   
     <hr>
     <audio src="images/audio.m4a" controls></audio>
 
@@ -71,46 +74,59 @@
 
 
 <footer>
-    <p>Form</p>
+    <h3>Form</h3>
 
     
         <form>
             
-                <p> Choose Keroppi</p>
-               <input type="radio" id="Keroppi"/>
-               <label for="Keroppi">Keroppi</label>
-               <label for="checkbox">Keroppi</label>
+            <span id="cell-1 ">
+                <label for="Keroppi"> Choose Keroppi </p>
+                <input type="radio" id="Keroppi"/>
+            </span>
+            
+
+            <span id="cell-2">
+               <label for="checkbox">Choose Keroppi</label>
                <input type="checkbox" id="checkbox"/>
-               <input type="text"/>
-        
-            <p>Pick a character</p>
-            <input list="characters"/>
+            </span>
+            
+            <span id="cell-3">
+                <label for="text-input">Type a character's name (Keroppi)</label>
+               <input type="text" id="text-input"/>
+            </span>
+
+            <span id="cell-4">
+                <label for="character-list"> Select a character</label>
+            <input list="characters" id="character-list"/>
                 <datalist id="characters">
                     <option value="Keroppi"></option>
                     <option value="Usahana"></option>
                     <option value="Tuxedo Sam"></option>
                 </datalist>
+            </span>
 
-        <br>
-<!--these inputs are not done-->
-
+            <span id="cell-5">
+                <label for="birthday">When is your favorite character's birthday ?</label> 
+                <input id="birthday" type="date"/>
+            </span>
             
-            <label for="birthday">When is your favorite character's birthday ?</label> 
-            <input id="birthday" type="date"/>
-            <br>
-
-`           <p>Select a character</p>
-                <select>
+            <span id="cell-6">
+                <label for="char-select">Select a character</label>
+                <select id="char-select">
                     <option value="Keroppi">Keroppi</option>
                     <option value="Usahana">Usahana</option>
                     <option value="Tuxedo Sam">Tuxedo Sam</option>
                 </select>
+            </span>
+`          
             
-
-            <fieldset>
-                <label for="reason">Why did you pick this character?</label>
-                <textarea id="reason"></textarea>
-            </fieldset>
+            <span id="cell-7"> 
+                <fieldset>
+                    <label for="reason">Why did you pick this character?</label>
+                    <textarea id="reason"></textarea>
+                </fieldset>
+            </span>
+            
 
             <button>back to top</button>
         </form>
