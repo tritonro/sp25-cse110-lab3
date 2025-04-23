@@ -53,11 +53,14 @@ h1{
 }
 
 h2{
-    font-family: 'DynaPuff';
     text-align: center;
     color: var(--section-header-text-color); 
     position: relative; 
-    top: 180px; 
+    top: 0px; 
+}
+
+header h2{
+    font-family: 'DynaPuff';
 }
 
 h3{
@@ -66,9 +69,8 @@ h3{
 }
 nav {
     padding: 2%; 
-
+    color: color-mix(in oklab, var(--main-bg-color) 50%, rgb(150, 213, 247) 50%);
     display: none; 
-    background-color: color-mix(in oklab, var (--main-bg-color) 50%, var (--section-bg-color));
 }
 
 section{
@@ -90,7 +92,6 @@ div{
 
 p{
     margin:auto; 
-
 }
 .short-p{
   
@@ -104,6 +105,7 @@ hr{
 .media{ 
     background-color: var(--main-bg-color, lightgrey); 
 }
+
 picture{
     display: flex;
     flex-shrink: 1; 
@@ -121,13 +123,13 @@ video {
 
 img{
     width: 40%; 
-    position: auto; 
+    position: relative; 
     left: 25%
 }
 
 footer{
-    
-    background-color: color(display-p3 1 0.98 0.3);
+    background-color: rgb(255, 250, 77);
+    color: color(display-p3 1 0.98 0.3);
     color: var(--footer-text-color);
     height: 50%; 
 }
@@ -158,12 +160,12 @@ form{
 #cell-3{
     grid-column-start: 2;
     grid-row: 2;
-
 }
+
 #cell-4{
     grid-column-start: 1;
-    grid-row: 3;
     grid-column-end: 2;
+    grid-row: 3;  
 }
 
 #cell-5{
@@ -172,10 +174,8 @@ form{
 }
 
 #cell-6{
-    #cell-4{
-        grid-column-start: 2;
-        grid-row: 4;
-    }
+    grid-column-start: 2;
+    grid-row: 4;
 }
 
 button{
@@ -196,8 +196,9 @@ button:active{
     animation-name: full-spin; 
     animation-duration: 2s; 
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
+
 @keyframes full-spin {
     0%{}
     50%{transform: rotate(180deg)}
@@ -206,6 +207,5 @@ button:active{
 
 @media(max-width: 768px){
     body{
-        background-color: var(--section-bg-color);
+        background-color: var(--section-bg-color);}
     }
-}
