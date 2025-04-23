@@ -29,3 +29,10 @@ section{
 hr{
     border: 10px solid var(--section-bg-color, aliceblue)
 }
+
+.media{background-color: var(--main-bg-color, lightgrey);}
+
+footer{
+    background-color: color(display-p3 1 0 0.8);
+    ;
+}
